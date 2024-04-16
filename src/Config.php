@@ -9,7 +9,7 @@ use Spatie\DiscordAlerts\Jobs\SendToDiscordChannelJob;
 
 class Config
 {
-    public static function getJob(array $arguments): SendToDiscordChannelJob
+    public static function getJob(array $arguments)
     {
         $jobClass = config('discord-alerts.job');
 
